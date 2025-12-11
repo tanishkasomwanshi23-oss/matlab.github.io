@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Function Plotter Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 40px;
+        }
+        #plotArea {
+            max-width: 600px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>MATLAB-Style Function Plotter Game</h2>
+
+    <label>Select a function:</label>
+    <select id="functionSelect">
+        <option value="sin">Sine Wave</option>
+        <option value="cos">Cosine Wave</option>
+        <option value="exp">Exponential Curve</option>
+    </select>
+
+    <button onclick="plotFunction()">Plot</button>
+
+    <div id="plotArea">
+        <canvas id="plotCanvas" width="600" height="400"></canvas>
+    </div>
+
+    <script src="plot.js"></script>
+
+</body>
+</html>
